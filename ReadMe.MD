@@ -4,4 +4,4 @@ spotless commands
 
 git push with new branch
 
-git push --set-upstream origin testRestAssured
+git push --set-upstream origin githubAction
