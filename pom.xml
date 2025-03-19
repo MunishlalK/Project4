@@ -21,4 +21,23 @@
  <modules>
   <module>catalog-service</module>
  </modules>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.diffplug.spotless</groupId>
+        <artifactId>spotless-maven-plugin</artifactId>
+        <version>2.43.0</version>
+        <configuration>
+          <java>
+            <importer />
+            <removeUnusedImports />
+            <palantirJavaFormat>
+              <version>2.35.0</version>
+            </palantirJavaFormat>
+            <formatAnnotations />
+          </java>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
